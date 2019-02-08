@@ -1,0 +1,638 @@
+<p></p>
+<p>
+  <span data-role="tag" data-value="2d0001b4-68bd-9fe4-b442-3b1dadd905b2" id="id5160c792-39d2-738c-5cdb-0eb446f39036" data-type="figure">Figure 3</span> is a 
+  <span data-role="tag" data-value="7f6cd696-753d-c182-a1b3-8f633d305ac5" id="ide5f522bb-6c2b-a333-4829-75b01d66f31c" data-type="term">block diagram illustrating</span>
+  <span data-role="tag" data-value="07acf968-fb38-5565-d298-e6f7ea2ffe09" id="id4ee0f7d3-45ba-c381-a9bd-1d95ff2d0660" data-type="term">exemplary components</span> for 
+  <span data-role="tag" data-value="3832a8b5-25a4-9188-70af-e88555849c81" id="idce97fdaf-1464-ca19-afd7-d163cc284fa0" data-type="term">event handling</span> in accordance with some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idaca94b7f-4cb8-5f44-6233-8828400f97e3" data-type="term">embodiments</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id57887137-ec50-af1a-754d-7bd48c387efa" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="49e5517b-d01e-494f-9616-af7cb4b67184" id="idcaad7c6c-31d3-9cd3-de2a-2b2757e0a8aa" data-type="drawingObject">memory 206</span> (
+  <span data-role="tag" data-value="9baa8c1e-1422-5abf-eef6-996a55a38e81" id="idbf6029ad-f569-1979-06ca-019ec1b67ef5" data-type="figure">Figure 2</span>) or 470 (FIG. 4) includes 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id5d55b011-13dc-2ba5-3c5c-14c26c397ef0" data-type="drawingObject">event sorter 338</span> (e.g., in 
+  <span data-role="tag" data-value="be2efa76-13cc-139b-4312-63e9763bb542" id="idfa86f525-a3cb-87d8-1fd8-d507ad1808b6" data-type="drawingObject">operating system 208</span>) and a 
+  <span data-role="tag" data-value="307bdad1-6b4a-855a-0fa0-1143da34d327" id="idc02caa5e-1f93-c177-716b-3802c193e146" data-type="term">respective application</span> 226
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id7d24747d-f98e-c930-c11d-535838bae1f1" data-type="drawingObject">event sorter 338</span> receives 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id3eb7b0e6-3e9d-db98-dc4d-9d34930ef43e" data-type="term">event information</span> and 
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="id904db048-40cf-7c64-a4e2-0794e4dd0fb4" data-type="term">determines</span> the application 226 and 
+  <span data-role="tag" data-value="aa437d29-919d-3b7f-44ea-31a757f9e9fb" id="id6764044d-0b29-6936-eb82-1afb4f2ee7e0" data-type="drawingObject">application view 302</span> of application 226 to which to deliver the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idd168c8aa-e8dd-8623-a0f3-0cb00d39b469" data-type="term">event information</span>. 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="idcf0adacd-98ef-3375-aa1a-96b7c7000aea" data-type="drawingObject">Event sorter 338</span> includes 
+  <span data-role="tag" data-value="8ea1c318-42db-4bcb-a8d0-4b89630e01ed" id="id44d8a360-24c6-0a4f-0b29-2174c33d634d" data-type="drawingObject">event monitor 308</span> and 
+  <span data-role="tag" data-value="af596919-e1ff-0b61-dabf-b0f74019d9cd" id="id5df79c34-8f3c-d226-02a9-edb8a2b448fe" data-type="drawingObject">event dispatcher module 322</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id2e78e491-c7e6-23a3-6bd8-d1960206d5bd" data-type="term">embodiments</span>, application 226 includes 
+  <span data-role="tag" data-value="af777745-a2fa-8558-c484-c1a4c8315603" id="id3ed787f7-89df-9ff9-03d5-5ef812c0117a" data-type="drawingObject">application internal state 332</span>, which indicates the 
+  <span data-role="tag" data-value="e343fa2b-8244-820e-230d-d41d5a375644" id="id255ef4f4-ffe5-986f-cf6f-2b3a642cdbc0" data-type="term">current application view(s)</span> displayed on 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id0b44756b-2071-6070-4b9f-94b016e358f9" data-type="term">touch-sensitive display</span> 278 when the application is active or executing. In some 
+  <span data-role="tag" data-value="ef129eca-51b2-ea40-34b6-dda3f24845e1" id="idce1bcba9-b56e-a8ec-9eed-a54673b0c22e" data-type="term">embodiments, device</span>
+  <span data-role="tag" data-value="b1349459-8dc5-f3fe-de34-7d3079eebb53" id="id8b0912c0-5eb2-c24f-288a-5e6cbb4983ff" data-type="drawingObject">device/global internal state 232</span> is used by 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id210e19c8-517a-33f7-448c-3081949deffb" data-type="drawingObject">event sorter 338</span> to determine which 
+  <span data-role="tag" data-value="0763d8bb-b0f2-3278-284d-081f7ba62ed7" id="idb6550d69-fb87-7c32-3954-801ee2b2e32a" data-type="term">application(s)</span> is (are) currently active, and 
+  <span data-role="tag" data-value="af777745-a2fa-8558-c484-c1a4c8315603" id="id9eff1893-fb0c-eeb1-8f6e-ba9d3a81a839" data-type="drawingObject">application internal state 332</span> is used by 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="idd8006f68-355f-578f-2ab1-4c8c95999977" data-type="drawingObject">event sorter 338</span> to determine 
+  <span data-role="tag" data-value="67b0572e-8169-507a-b656-0ebdfad7b6cf" id="idf3fab0e5-c148-b29d-bd4b-05336ae50272" data-type="term">application views</span> 302 to which to 
+  <span data-role="tag" data-value="81619353-5cd8-7af1-32b1-ad45723539dc" id="id2cfae56e-885e-b5a7-6bc4-c8cbae4166a4" data-type="term">deliver event information</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idfb63fe1e-0a88-34bb-a2b4-1f1f6581475d" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="af777745-a2fa-8558-c484-c1a4c8315603" id="idd3f8145b-063f-1654-d71f-ac044776a395" data-type="drawingObject">application internal state 332</span> includes 
+  <span data-role="tag" data-value="66f2ba46-44f6-c8b4-a3f8-9628d8250beb" id="idf39d574e-aa49-e850-b9ee-52acca63a1c0" data-type="term">additional information</span>, such as one or more of: resume 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id79fe5c90-008e-5a5a-b543-9a6e16089618" data-type="term">information</span> to be used when application 226 resumes execution, 
+  <span data-role="tag" data-value="96a5c6c2-761b-1b43-da0d-bf1e0b6fa100" id="id25dedca9-7706-a2c2-c03c-ac5dc9ab082a" data-type="term">user interface state information</span> that indicates 
+  <span data-role="tag" data-value="69fb6cb2-08b5-4b40-7c50-7fd8ef5fb8c9" id="id9ff087f7-819a-a9ad-70b1-46ed57a3afd1" data-type="term">information being</span> displayed or that is ready for 
+  <span data-role="tag" data-value="3f626644-da3e-8f0a-c964-e17d329e20fb" id="id93bb31fa-18ad-e742-ba94-ea03722ff02f" data-type="term">display</span> by application 226, a 
+  <span data-role="tag" data-value="0ef3d748-a927-05a4-774d-7beb0521d27b" id="id4c0a3289-03cc-f3d1-70ec-9c031e47609e" data-type="term">state queue</span> for enabling the 
+  <span data-role="tag" data-value="42252f3e-ce3c-2adc-80f8-233805d1fc8b" id="ideeb5dbe1-69c9-fe2e-398d-c07a509692de" data-type="term">user</span> to go 
+  <span data-role="tag" data-value="150363f9-8504-2724-3c6f-deac44f87fa8" id="id43f1c0de-0034-5906-0361-330525cc657a" data-type="term">back</span> to a 
+  <span data-role="tag" data-value="8857d2c0-7b73-57c6-515b-adc6d7def1dc" id="id030d3a78-14d9-cce3-fc9e-e205654b77da" data-type="term">prior state or view</span> of application 226, and a 
+  <span data-role="tag" data-value="89922733-b8da-e9b2-09aa-92e4f6f7c295" id="id8a12bd63-06af-66b3-12af-9203ae5e950a" data-type="term">redo/undo queue</span> of 
+  <span data-role="tag" data-value="d981f3f4-f094-61be-ce59-754a84ec62f4" id="id4ed3bfa1-1e5f-b81d-c8ba-713a9cb7dbed" data-type="term">previous actions</span> taken by the 
+  <span data-role="tag" data-value="42252f3e-ce3c-2adc-80f8-233805d1fc8b" id="id9653529a-2585-8f8b-1fed-83be8415c49b" data-type="term">user</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="8ea1c318-42db-4bcb-a8d0-4b89630e01ed" id="id6e839216-3dff-b75b-ca40-ab1d71fb4733" data-type="drawingObject">Event monitor 308</span> receives 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idf2005cc9-7926-ec30-c129-611b8a7558fe" data-type="term">event information</span> from 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="id76fa75fa-e536-00a2-2bf6-835fc0cc4554" data-type="drawingObject">peripherals interface 322</span>. 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id67b324dc-072e-f7c3-28be-402a2e49bfdf" data-type="term">Event information</span> includes 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="idcbb83903-7a4f-1916-25d7-5ce03ad99d45" data-type="term">information</span> about a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="id4f9f7665-6f80-bb49-8a50-cebbfa506e7e" data-type="term">sub-event</span> (e.g., a 
+  <span data-role="tag" data-value="93ad8877-9563-6f5d-31be-c405b1389988" id="id1c8723aa-ea4a-51f5-eb1e-d48e338a9768" data-type="term">user touch</span> on 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id83ceceb7-4e14-7c33-7d0c-279a990e9291" data-type="term">touch-sensitive display</span> 278, as 
+  <span data-role="tag" data-value="ebc581b7-651c-1d62-5a1f-9f8e96d58457" id="id5709e552-f697-fbaf-5c30-3fbb1e42e069" data-type="term">part</span> of a 
+  <span data-role="tag" data-value="5e73dd97-4526-8d85-058d-86d1d530082c" id="idf3f7321c-b247-efea-fe03-322cad879f87" data-type="term">multi-touch gesture</span>). 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="idb5ddb668-e484-176a-79cb-51a990bbea44" data-type="drawingObject">peripherals interface 322</span> transmits 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id116ac13e-8382-7cce-b0e8-5b85e31a181e" data-type="term">information</span> it receives from 
+  <span data-role="tag" data-value="d1447795-5cc9-a560-ecc1-ba60947319b1" id="id3adb3fb6-9549-a2ac-5dc8-e4c6b2d2c877" data-type="term">I/O subsystem</span> 298 or a 
+  <span data-role="tag" data-value="2fab264d-d81e-9669-dbe8-cc31e4cb0e72" id="id197a985e-4580-110e-72fa-576f434ad632" data-type="term">sensor</span>, such as 
+  <span data-role="tag" data-value="c2a6b08d-1daa-4bca-4d96-0f19ea9a2a61" id="id9d50834e-69bd-f34c-cd24-4035c8612e98" data-type="drawingObject">proximity sensor 304</span>, 
+  <span data-role="tag" data-value="06166213-ad7d-24c3-669c-dc7cb25c6905" id="ida12949b9-1397-06a3-eb13-e3ba5baee46e" data-type="drawingObject">accelerometer(s) 302</span>, and/or 
+  <span data-role="tag" data-value="49ff3c61-76f7-578b-4a63-0e52310afc86" id="id6c798a17-cbc9-c50a-d95e-86c8f69dfa45" data-type="drawingObject">microphone 308</span> (through 
+  <span data-role="tag" data-value="3a1b34db-68f7-fda8-b8f3-087e71212c80" id="id8a8a8d86-9858-8410-a5d5-fe0431ec29f9" data-type="drawingObject">audio circuitry 306</span>). 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id2aa1c5ae-e1ea-27dc-b6a1-211112179ed4" data-type="term">information</span> that 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="id603d3341-d53d-251d-b261-9afe57590b1a" data-type="drawingObject">peripherals interface 322</span> receives from 
+  <span data-role="tag" data-value="d1447795-5cc9-a560-ecc1-ba60947319b1" id="id152cd725-19e4-445f-3e9e-b41ff0cf99d1" data-type="term">I/O subsystem</span> 298 includes 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id54da0719-318d-1233-974e-e2a98be6b2f7" data-type="term">information</span> from 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id4c5be97b-9e84-b1c7-78e0-2cfcb631c99b" data-type="term">touch-sensitive display</span> 278 or a 
+  <span data-role="tag" data-value="4b6120ad-c10e-3c56-c896-137275146929" id="id7e61fe87-0d66-d349-ea1f-bb468c00c524" data-type="term">touch-sensitive surface</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idb273d384-1668-2ba7-687f-5bb8e188c7d2" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="8ea1c318-42db-4bcb-a8d0-4b89630e01ed" id="id35c2ce3c-5722-d787-9b07-b3a238007b01" data-type="drawingObject">event monitor 308</span> sends 
+  <span data-role="tag" data-value="8ebe4e7f-5949-fb24-5597-41199b296d32" id="id180e1f5b-cf54-0910-885c-8541ba9b8838" data-type="term">requests</span> to the 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="id0e837da1-be71-4c38-9d9c-986f43f01a56" data-type="drawingObject">peripherals interface 322</span> at 
+  <span data-role="tag" data-value="479d0625-8da4-d48e-ea44-694baf8010fb" id="idcb70c3d1-0f70-e08f-bce6-e9b90b6acca9" data-type="term">predetermined intervals</span>. In 
+  <span data-role="tag" data-value="1b6d4854-a0e8-e01c-cd10-c93ef7d21fc4" id="idafd4854c-f5e1-5ae4-72f5-b6a3cf5f54c9" data-type="term">response</span>, 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="id3c10e357-57f1-17e1-57c1-646f34528701" data-type="drawingObject">peripherals interface 322</span> transmits 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idb4b2cb4a-d0a1-1678-8b2e-ec28da679d71" data-type="term">event information</span>. In 
+  <span data-role="tag" data-value="bb3f7ce4-474e-ca54-17be-78836d33257d" id="idf474cc50-f0dd-5a61-e12c-bfb202d4ca31" data-type="term">other embodiments</span>, 
+  <span data-role="tag" data-value="2a8ffe06-055f-2bf6-5c09-b0b853baab61" id="id11c5ba38-f4cc-7444-171c-bc9c8a8dec26" data-type="drawingObject">peripherals interface 322</span> transmits 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idf41327ab-c613-e785-13ed-571c10c7382d" data-type="term">event information</span> only when there is a 
+  <span data-role="tag" data-value="194f981b-cc49-10f1-5bfa-405a3a2029b9" id="id764bee1d-2131-869e-c6fd-61797880bda8" data-type="term">significant event</span> (e.g., receiving an 
+  <span data-role="tag" data-value="00e1b173-6f73-58d0-4d0d-93d25449139a" id="ideb9f4834-a27e-4bf2-b181-8a4e3a4741c5" data-type="term">input</span>
+  <span data-role="tag" data-value="23d2e3e0-6468-7406-35b3-937076adb320" id="id0bb78cc3-dd65-7e80-412c-4e5cf29b3563" data-type="term">above</span> a 
+  <span data-role="tag" data-value="9fc92946-a30e-4bb5-471e-6a298227bc94" id="id6815fe41-3d1e-cc9f-660c-e0a7c845ab0d" data-type="term">predetermined noise threshold</span> and/or for more than a 
+  <span data-role="tag" data-value="56f26e21-44e0-9307-761d-7b7ddaaf96c4" id="id9067da69-12c3-80a9-3a52-e19f3ee379f8" data-type="term">predetermined duration</span>).&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id08884c94-1908-ec7c-fc5a-a3170ab5fe73" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id6d4abcf9-8411-656b-98a6-37db6fd91769" data-type="drawingObject">event sorter 338</span> also includes a 
+  <span data-role="tag" data-value="12933177-5623-752b-8247-3caf2f5e75bb" id="id8352cea2-1ff9-0eb3-32ab-0fba7c315131" data-type="drawingObject">hit view determination module 310</span> and/or an 
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="ida817f68e-82db-d618-732d-aee4a772bdf9" data-type="drawingObject">active event recognizer determination module 316</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="12933177-5623-752b-8247-3caf2f5e75bb" id="idbdf62dc0-562f-a276-be07-d835b59d4f63" data-type="drawingObject">Hit view determination module 310</span> provides 
+  <span data-role="tag" data-value="8d4503f6-e96d-8d58-5561-1c44997ddf9c" id="id8e1343f6-dae2-b674-5277-0a8d58bf11f4" data-type="term">software procedures</span> for determining where a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="ida6462769-2698-5618-d6dc-1ae12fbcd4ca" data-type="term">sub-event</span> has taken 
+  <span data-role="tag" data-value="983b26d7-5bac-c73d-c32a-1fb62ea10bb0" id="idf9e93caa-0bcf-5ee3-0b53-26c04b1bd346" data-type="term">place</span> within one or more 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id1540e46a-4498-5bca-35f5-b3d48b544a78" data-type="term">views</span> when 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id5a938eba-d2c4-e1ec-7743-9fa9f3cd8e4c" data-type="term">touch-sensitive display</span> 278 displays 
+  <span data-role="tag" data-value="d4753458-6fab-4f46-29d0-009e8a58e2f2" id="id9e17d57a-de37-277b-905e-ce6231196c33" data-type="term">more than one view</span>. 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id764c2fbd-2a57-e13f-590a-5800d67ad6f1" data-type="term">Views</span> are made up of 
+  <span data-role="tag" data-value="a5c7577a-e512-91b6-943a-2c429f0a9d4c" id="idee29e32a-237b-a324-7a2e-45243a72b179" data-type="term">controls</span> and 
+  <span data-role="tag" data-value="16a76f25-7af9-af1a-14ed-48b6a1651da6" id="ide2f5c0ce-adeb-4f69-3766-054d62cbd135" data-type="term">other elements</span> that a 
+  <span data-role="tag" data-value="42252f3e-ce3c-2adc-80f8-233805d1fc8b" id="id0585f435-9da0-2062-7353-4e86bb1016b1" data-type="term">user</span> can see on the 
+  <span data-role="tag" data-value="3f626644-da3e-8f0a-c964-e17d329e20fb" id="id1d5b4570-78a1-0b22-e299-6801934d7b68" data-type="term">display</span>.&nbsp;
+</p>
+<p></p>
+<p>Another 
+  <span data-role="tag" data-value="007d8234-7fa3-24b3-e3a6-b2ac803f61e6" id="ided181ba3-64ac-81c6-d4c7-9354dc7eb1f6" data-type="term">aspect</span> of the 
+  <span data-role="tag" data-value="2c76a79b-b7be-4e5b-cc82-0b2208d36e16" id="id505de4cc-d9d9-7060-0461-f173346bfecf" data-type="term">user interface</span> associated with an application is a set of 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id60253be6-9d6f-45aa-64c6-51340cc3062f" data-type="term">views</span>, sometimes herein called 
+  <span data-role="tag" data-value="37d00f3b-4c06-3d8a-9f00-c540b69c3157" id="idbf0a64e0-70e8-4f4f-1fa6-451690ab9271" data-type="term">application views or user interface windows</span>, in which 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="ide06062d8-88a7-f925-07e9-8e2a02bf792f" data-type="term">information</span> is displayed and 
+  <span data-role="tag" data-value="52294604-12f3-540e-4c23-ef3c7a7ce824" id="id5ba397f0-b015-9df5-8ed5-2dd2ff624549" data-type="term">touch-based gestures</span> occur. The 
+  <span data-role="tag" data-value="67b0572e-8169-507a-b656-0ebdfad7b6cf" id="ida74904e4-2f43-72f1-22e6-a904b656a7f5" data-type="term">application views</span> (of a 
+  <span data-role="tag" data-value="307bdad1-6b4a-855a-0fa0-1143da34d327" id="ida34d2429-8cdf-a7cd-a40a-326c9aa5c709" data-type="term">respective application</span>) in which a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="idfc1fda82-9fe3-9659-c6b5-16bb4e46332d" data-type="term">touch</span> is detected may correspond to 
+  <span data-role="tag" data-value="9f1c6ce3-abf4-9b3a-bdeb-12f962d78b4b" id="idacaf94d2-7dc9-1159-f875-a0e0a772acfc" data-type="term">programmatic levels</span> within a programmatic or 
+  <span data-role="tag" data-value="558059dd-5db1-f6ef-b204-97672cfd899a" id="id508eebb0-4bc6-167e-48cc-ae5c15d003a9" data-type="term">view hierarchy</span> of the application. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id28503475-7057-7f74-7de9-dae47f68f777" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="634d7d51-a56e-8d62-9e13-4b4131e67343" id="id0e21087f-ab57-ecb2-a7aa-3a8eceb316a8" data-type="term">lowest level view</span> in which a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id4ba2fbc8-65d2-3d78-dc63-1edab1edef8b" data-type="term">touch</span> is detected may be called the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="id8df2ad5f-b57e-a61a-fdb7-cc02d2497999" data-type="term">hit view</span>, and the set of 
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="id8c32b3c8-5f32-ee2e-fe3e-ef543e68fd2c" data-type="term">events</span> that are recognized as 
+  <span data-role="tag" data-value="663a3866-2fc4-45cb-1561-f37f5ff7e0f9" id="ida3bff570-1c49-9114-ccc7-dabe01d77343" data-type="term">proper inputs</span> may be determined based, at least in 
+  <span data-role="tag" data-value="ebc581b7-651c-1d62-5a1f-9f8e96d58457" id="id5c268190-fe63-fb18-b0cf-f0e9804edb60" data-type="term">part</span>, on the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="id2fd7d1f4-75cc-16b9-ddab-ee2dc80237bc" data-type="term">hit view</span> of the 
+  <span data-role="tag" data-value="6968c8ef-a720-a43f-fa49-22353ded533e" id="id9d26c6f8-400a-8fa6-3c1c-217d0ae14383" data-type="term">initial touch</span> that begins a 
+  <span data-role="tag" data-value="1ba66932-b249-564c-7991-3fb83a7c9403" id="idbbb799bc-570d-80d0-809a-11d07d0ea6b8" data-type="term">touch-based gesture</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="12933177-5623-752b-8247-3caf2f5e75bb" id="id914cd3a4-7882-8698-1b63-30817b110ded" data-type="drawingObject">Hit view determination module 310</span> receives 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id9db53034-0c0e-8a03-dc97-3caf31cfb8cd" data-type="term">information</span> related to sub 
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="id77627784-655e-65dc-00de-568e4117b91d" data-type="term">events</span> of a 
+  <span data-role="tag" data-value="1ba66932-b249-564c-7991-3fb83a7c9403" id="id4eef0544-0088-8da7-1e6a-d4b70d6f6505" data-type="term">touch-based gesture</span>. When an application has 
+  <span data-role="tag" data-value="8245ff00-a0b3-415e-611e-fc957ae99fe5" id="iddd38a3b1-bcd5-05c6-3b52-d55d1a0d0040" data-type="term">multiple views</span> organized in a 
+  <span data-role="tag" data-value="6a6bba6a-ec32-927c-b7b8-ad19457cd875" id="id4bd42b1b-e369-86e7-710d-d2788ab61787" data-type="term">hierarchy</span>, 
+  <span data-role="tag" data-value="12933177-5623-752b-8247-3caf2f5e75bb" id="idea1ba874-3c7c-c4e3-b3e7-e08070e95bba" data-type="drawingObject">hit view determination module 310</span> identifies a 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="idf66f2d53-549d-300f-0781-116ed84e7a73" data-type="term">hit view</span> as the 
+  <span data-role="tag" data-value="01835a87-4ba2-2072-f092-ae83f2571a2b" id="idd7050ad8-bb99-4b51-8889-3a28739edbef" data-type="term">lowest view</span> in the 
+  <span data-role="tag" data-value="6a6bba6a-ec32-927c-b7b8-ad19457cd875" id="id3b1c9fc0-a9d3-2fb3-caf6-d815a98a0b1a" data-type="term">hierarchy</span> which should handle the 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="idc058aff2-d6d3-6d91-6d49-16eb7aba8ef3" data-type="term">sub-event</span>. In 
+  <span data-role="tag" data-value="1a96bd11-a266-c2e6-e156-c6f93b2b714e" id="id0f787fb8-b628-4c03-f737-ee5625bc720e" data-type="term">most circumstances</span>, the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="id3d994c51-d9be-ef15-01c1-693ccefbf4e8" data-type="term">hit view</span> is the 
+  <span data-role="tag" data-value="634d7d51-a56e-8d62-9e13-4b4131e67343" id="idbd4b6bcb-2c81-f047-dadd-5ecb432fd423" data-type="term">lowest level view</span> in which an 
+  <span data-role="tag" data-value="a982bd7d-d24d-6a4e-8070-cacabe6caa4d" id="idecd71ee1-b851-f074-3ef4-d74e6669cb2a" data-type="term">initiating sub-event occurs</span> (e.g., the first 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="ide308d3e5-6fbe-eb7d-e9df-f7e8d3a39bde" data-type="term">sub-event</span> in the 
+  <span data-role="tag" data-value="90bf2484-c6a5-43ea-0ea5-bfed43c55368" id="idba7a4165-042e-7f84-84bc-4a97db7a0dff" data-type="term">sequence</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="idb833f77a-d554-15fc-d79d-a087a37a6bbf" data-type="term">sub-events</span> that 
+  <span data-role="tag" data-value="6be2672b-c044-9fa0-34dd-258dfa384020" id="id3e25515a-86a1-0807-5b74-fd6ff9132f81" data-type="term">form</span> an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id078575ae-9a35-1727-e8bf-1b7956588988" data-type="term">event</span> or 
+  <span data-role="tag" data-value="87a598ef-fda2-2f53-4387-4812033f7382" id="idd4aebb11-564f-6d39-ce3e-8deb5f1ffbf3" data-type="term">potential event</span>). Once the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="idcc75fd26-1e59-be34-0a27-22db2a0eb23f" data-type="term">hit view</span> is identified by the 
+  <span data-role="tag" data-value="12933177-5623-752b-8247-3caf2f5e75bb" id="id2b195453-43a1-f03c-3f4e-73ecea89448d" data-type="drawingObject">hit view determination module 310</span>, the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="id40835898-032c-144e-a8fd-06ea1f470119" data-type="term">hit view</span> typically receives all 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id1063f135-44a0-438e-e0b8-2af316f98d14" data-type="term">sub-events</span> related to the 
+  <span data-role="tag" data-value="e6b1e7c4-f499-7447-4b3d-cd632a808ff6" id="id1215b54d-40ca-b371-241f-ec463ca13c9b" data-type="term">same touch</span> or 
+  <span data-role="tag" data-value="b3d44c3e-111b-3b7f-e804-59c431aba8aa" id="id6127a02d-006e-3b28-aea8-4fffdacbb112" data-type="term">input source</span> for which it was identified as the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="idbc5c0207-2c87-de6a-1c5c-2313cf1f5644" data-type="term">hit view</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="ide228d4c8-6719-90c3-d798-f03ad3b7920f" data-type="drawingObject">Active event recognizer determination module 316</span>
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="idf747434a-e8ad-ded1-414a-58d35089600e" data-type="term">determines</span> which 
+  <span data-role="tag" data-value="bbde8fc9-f143-507a-5503-dc3faf4b85d2" id="ide0ef85c0-3ff0-b79f-fd34-b2affaa9c0e4" data-type="term">view</span> or 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id1035555a-9fcf-cff7-3dc1-9c4cd8b925aa" data-type="term">views</span> within a 
+  <span data-role="tag" data-value="558059dd-5db1-f6ef-b204-97672cfd899a" id="id0c459ee4-a402-a04b-85e3-5407677a3d62" data-type="term">view hierarchy</span> should receive a 
+  <span data-role="tag" data-value="691ab00c-7687-dd71-f810-9cad5503f506" id="id5cde96f0-8478-274f-b94b-9083d495ce7f" data-type="term">particular sequence</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id2c4e4195-525b-e62a-6b53-69ab952de248" data-type="term">sub-events</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id0b725807-391f-b2df-2dc1-6e32217f9646" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="idfccc02d6-dbb2-0443-381a-abe5c37083de" data-type="drawingObject">active event recognizer determination module 316</span>
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="id83c6c81d-d77b-3725-038f-44b7dba77aa8" data-type="term">determines</span> that 
+  <span data-role="tag" data-value="94d6f632-3d4e-c1e0-b8b9-7ad7bbcaa242" id="idc9ce03ca-e5a7-9153-d46a-7c4274b9889f" data-type="term">only the hit view</span> should receive a 
+  <span data-role="tag" data-value="691ab00c-7687-dd71-f810-9cad5503f506" id="id0a69e796-a68f-1570-07e0-beab37b16f03" data-type="term">particular sequence</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="idd26d5452-0f97-8c4d-db0b-08c11cf7d3d6" data-type="term">sub-events</span>. In 
+  <span data-role="tag" data-value="bb3f7ce4-474e-ca54-17be-78836d33257d" id="ide0705de1-3dd3-cd5a-d32b-41f3a7f9ccbf" data-type="term">other embodiments</span>, 
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="idcd5b3e51-6190-0951-0647-959081d1acde" data-type="drawingObject">active event recognizer determination module 316</span>
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="id9560c803-72b1-2a74-1ace-46c499f12721" data-type="term">determines</span> that all 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id3284a2d2-be1d-1292-6289-2b75ae37ee97" data-type="term">views</span> that include the 
+  <span data-role="tag" data-value="66d433e8-5015-13f0-835c-e6bbdd92544d" id="idd49f24d6-c4bb-e9a2-3119-857fbd55112f" data-type="term">physical location</span> of a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="idbc627f0b-5127-7acc-de61-015d4775de29" data-type="term">sub-event</span> are 
+  <span data-role="tag" data-value="6913c34d-f8c6-45c6-e278-5ab687e940d9" id="idd04574e8-f7b9-5423-dbea-6efc1cd71759" data-type="term">actively involved views</span>, and therefore 
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="id6720a055-b742-7d88-fe54-9a284cd19c34" data-type="term">determines</span> that all 
+  <span data-role="tag" data-value="6913c34d-f8c6-45c6-e278-5ab687e940d9" id="id322bc902-20f8-5540-ec0b-e53a0cbb3f06" data-type="term">actively involved views</span> should receive a 
+  <span data-role="tag" data-value="691ab00c-7687-dd71-f810-9cad5503f506" id="id17f5e0fe-062b-967f-f143-2a1265a2a8f3" data-type="term">particular sequence</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="ida30de06e-f867-eec4-a3a5-9e04c63a8880" data-type="term">sub-events</span>. In 
+  <span data-role="tag" data-value="bb3f7ce4-474e-ca54-17be-78836d33257d" id="id69962367-1a3e-462f-ce8f-342812699b0d" data-type="term">other embodiments</span>, even if 
+  <span data-role="tag" data-value="308fe511-f3f1-8f5a-8b82-4d12bb4e3899" id="id23e85a80-d928-4566-5c8a-d6eaeb3242bf" data-type="term">touch sub-events</span> were entirely confined to the 
+  <span data-role="tag" data-value="3fc7f684-7190-d3c7-5f3f-51ba300c3514" id="id37a1b7db-1300-c495-afa9-f928f80b17f0" data-type="term">area</span> associated with one particular 
+  <span data-role="tag" data-value="bbde8fc9-f143-507a-5503-dc3faf4b85d2" id="idf4bcc6fa-0de9-48af-5238-226481597f30" data-type="term">view</span>, 
+  <span data-role="tag" data-value="9cdcbd80-1298-ddc0-976d-e83beab6723b" id="id39e3c87a-bc67-fa46-8279-199fa9b377fd" data-type="term">views</span> higher in the 
+  <span data-role="tag" data-value="6a6bba6a-ec32-927c-b7b8-ad19457cd875" id="id9e9de297-e9b5-6166-f016-f766f1232d82" data-type="term">hierarchy</span> would still remain as 
+  <span data-role="tag" data-value="6913c34d-f8c6-45c6-e278-5ab687e940d9" id="id84cab913-1c3f-2ca0-2e5e-b8b728129ff1" data-type="term">actively involved views</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="af596919-e1ff-0b61-dabf-b0f74019d9cd" id="id61af1b18-1972-0902-7634-0ad047b56a4d" data-type="drawingObject">Event dispatcher module 322</span> dispatches the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id13c190a4-1e3a-d64e-f01b-ab96b1451f99" data-type="term">event information</span> to an 
+  <span data-role="tag" data-value="ee9638c0-5109-3452-c532-cb510b3de292" id="idf883f831-7b17-acba-572a-eae39e221de9" data-type="term">event recognizer</span> (
+  <span data-role="tag" data-value="dfc8d75a-4b52-70ec-d409-0f97b5ac1042" id="id6623e729-206f-4a2d-58bb-0a28a28989e8" data-type="term">e.g., event recognizer</span> 336). In 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="ide9910e76-12bd-dfa0-490b-f41bb16cfe9f" data-type="term">embodiments</span> including 
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="id0b586a6d-7fda-9adf-5c72-1f349dd59a5b" data-type="drawingObject">active event recognizer determination module 316</span>, 
+  <span data-role="tag" data-value="af596919-e1ff-0b61-dabf-b0f74019d9cd" id="ida75f3112-f88d-af62-0868-d884146f19ea" data-type="drawingObject">event dispatcher module 322</span> delivers the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id2a0e8b5a-d644-9a4e-eaf6-6bdbda5c548a" data-type="term">event information</span> to an 
+  <span data-role="tag" data-value="ee9638c0-5109-3452-c532-cb510b3de292" id="ide9ddc451-9230-9515-ab92-ec779ea6ab80" data-type="term">event recognizer</span> determined by 
+  <span data-role="tag" data-value="f0fbaf92-88e9-10dc-911d-2392cd728e0a" id="id7b95098f-5833-0cba-6a7b-a473b8592890" data-type="drawingObject">active event recognizer determination module 316</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id48916510-75cf-0e06-2eaa-adf0b85822a8" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="af596919-e1ff-0b61-dabf-b0f74019d9cd" id="idb4bdaee6-22d9-5442-e1eb-b1328cefc212" data-type="drawingObject">event dispatcher module 322</span>
+  <span data-role="tag" data-value="e41989b3-f4dd-7f70-1831-676f8374fc7a" id="id4c91002f-8afe-9aec-614a-fc899fb98c96" data-type="term">stores</span> in an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id7b93b2fe-f157-4b73-2552-8e67b1f74de5" data-type="term">event</span> queue the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id8a845e78-4513-dd55-fdd6-c02c34e07761" data-type="term">event information</span>, which is retrieved by a 
+  <span data-role="tag" data-value="adb12a61-9c9a-c161-e704-006b2c2a5e08" id="idccf0f29c-6304-0444-03c5-1450786e9ff6" data-type="term">respective event receiver</span> 304.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idefd5b16d-f1b5-3209-4044-831af9800ae1" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="be2efa76-13cc-139b-4312-63e9763bb542" id="id0a506299-f78e-227d-0964-05ece37046b2" data-type="drawingObject">operating system 208</span> includes 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id42df098a-b956-aace-eb12-18066d99ce27" data-type="drawingObject">event sorter 338</span>. Alternatively, application 226 includes 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="idb8a14643-537f-3ec7-d035-fe24fff8e2fb" data-type="drawingObject">event sorter 338</span>. In 
+  <span data-role="tag" data-value="9cbaa7ce-07db-aa91-b7a9-a3489a3348f6" id="idf7094a40-8657-27ea-898a-532cce6a0fd9" data-type="term">yet other embodiments</span>, 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id63e7309f-55bb-db41-0aa2-ebe508b20430" data-type="drawingObject">event sorter 338</span> is a 
+  <span data-role="tag" data-value="567d9294-8a26-a477-8bf4-ca5481b637ae" id="id7a2ed322-581e-2696-51b3-5f26b5dc1588" data-type="term">stand-alone module</span>, or a 
+  <span data-role="tag" data-value="ebc581b7-651c-1d62-5a1f-9f8e96d58457" id="id4d374f38-65fc-37a6-bdd4-cae5826d9814" data-type="term">part</span> of another 
+  <span data-role="tag" data-value="e277b19f-7a81-1f21-3608-8eac1215f7d7" id="id6d959845-3f2d-626b-f6c8-3da2e381544d" data-type="term">module</span> stored in 
+  <span data-role="tag" data-value="49e5517b-d01e-494f-9616-af7cb4b67184" id="idf07d6d1a-0cd0-f485-edb8-c25c8c44638a" data-type="drawingObject">memory 206</span>, such as 
+  <span data-role="tag" data-value="186f13a1-3362-0553-de64-539e1607d5d5" id="id9e833065-a762-b19b-4555-52e299873656" data-type="term">contact/motion module</span> 338.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id831c75f1-2331-02c4-47c5-979771e54850" data-type="term">embodiments</span>, application 226 includes a 
+  <span data-role="tag" data-value="5a4852b7-326c-b925-4690-2a448f89e8ab" id="id287eedee-83e6-52a2-7a4a-011b9ae643af" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="100eeda8-740b-43d6-6692-f99d79a20612" id="id5046ec93-5f51-964d-7013-78e47e2f3d6e" data-type="term">event handlers</span> 334 and one or more 
+  <span data-role="tag" data-value="67b0572e-8169-507a-b656-0ebdfad7b6cf" id="id1e056aa5-fce9-e912-4142-863912074b87" data-type="term">application views</span> 302, each of which includes 
+  <span data-role="tag" data-value="63317939-b57a-7a86-6210-8885c6f84532" id="idcb6dbf3f-1311-d09d-5bb7-fc68e6c0833a" data-type="term">instructions</span> for handling 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="idb86d8021-1499-449d-380f-57d7eae161b7" data-type="term">touch</span>
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="id96f29609-118e-2593-6b8d-5a402d15ba00" data-type="term">events</span> that occur within a 
+  <span data-role="tag" data-value="43d0c6f8-79b8-dbd8-b913-c73b721f1909" id="idedea419e-6756-f1f5-fcfa-593265598b7d" data-type="term">respective view</span> of the 
+  <span data-role="tag" data-value="b8550573-2fed-e619-abf9-b1ca2077950b" id="id4f6d7cfe-0a3f-95cd-1a55-a3b543db68d9" data-type="term">application's</span>
+  <span data-role="tag" data-value="2c76a79b-b7be-4e5b-cc82-0b2208d36e16" id="idf3e3b64f-ec7a-8e6e-0408-9abe252d4a32" data-type="term">user interface</span>. Each 
+  <span data-role="tag" data-value="aa437d29-919d-3b7f-44ea-31a757f9e9fb" id="id663fd0cc-a53d-ea23-c8c2-6a04928781d4" data-type="drawingObject">application view 302</span> of the application 226 includes one or more 
+  <span data-role="tag" data-value="e20bbcb6-079a-c40a-be67-9fe5b3d5b9c5" id="id4e3e089a-c6f0-5d9e-6dc1-ab678caf0e55" data-type="term">event recognizers</span> 336. Typically, a 
+  <span data-role="tag" data-value="143811c9-bc80-e79f-0326-0c8cda38d82e" id="id271a0361-c00d-a9b3-5cf1-0531013c276b" data-type="term">respective application view</span> 302 includes a 
+  <span data-role="tag" data-value="5a4852b7-326c-b925-4690-2a448f89e8ab" id="ided0ba0af-3c87-cb4e-d46b-b55c3d216e9e" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="e20bbcb6-079a-c40a-be67-9fe5b3d5b9c5" id="id6a448dce-2177-9ca1-19e1-92214cfccdd2" data-type="term">event recognizers</span> 336. In 
+  <span data-role="tag" data-value="bb3f7ce4-474e-ca54-17be-78836d33257d" id="id61f1ad88-2ff1-334d-df1f-69e25970f16d" data-type="term">other embodiments</span>, one or more of 
+  <span data-role="tag" data-value="e20bbcb6-079a-c40a-be67-9fe5b3d5b9c5" id="idcfba8d3b-2839-42a7-07a0-cb06acc791ad" data-type="term">event recognizers</span> 336 are 
+  <span data-role="tag" data-value="ebc581b7-651c-1d62-5a1f-9f8e96d58457" id="id809be8f9-fa41-4f61-1316-d1963c60a2a8" data-type="term">part</span> of a 
+  <span data-role="tag" data-value="24a1b678-0e1f-d1d1-4f13-943a8196834c" id="id17317747-b8d8-e859-32f0-207543e48162" data-type="term">separate module</span>, such as a 
+  <span data-role="tag" data-value="4dc4ce53-aedd-51b9-a231-48fa1e8c7c9c" id="id3ce59084-7308-3ad0-e090-0565dea5122b" data-type="term">user interface kit</span> (not shown) or a 
+  <span data-role="tag" data-value="6a30ddbf-a333-1dd8-e1b2-ee984aaa553b" id="id446f5f9c-62c6-bde6-ffc6-7d3de36f224e" data-type="term">higher level object</span> from which application 226 
+  <span data-role="tag" data-value="ba7b6b0a-bc4f-15ff-999d-06d45ede2800" id="id8f0af5b1-8491-dcd3-556b-973fd2ed89a9" data-type="term">inherits methods</span> and 
+  <span data-role="tag" data-value="0036c59d-b97c-b0a5-7007-f7e2a1d40422" id="iddd9ca48c-3264-4016-908c-a93957f4f71f" data-type="term">other properties</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idfc146fca-c4ea-92b8-a29f-17e7608e0549" data-type="term">embodiments</span>, a 
+  <span data-role="tag" data-value="9190cd35-ca45-5399-02a7-676f4ddce83b" id="idf2ec9b63-df8f-5474-e38a-3972ac581df7" data-type="term">respective event handler</span> 334 includes one or more of: 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="id4e54db5f-d874-892a-7ffb-31a5fb2771d0" data-type="drawingObject">data updater 306</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="iddefe3d14-3746-33d7-a277-6630e3b3defb" data-type="drawingObject">object updater 314</span>, 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="idf784fc4a-0e53-9b20-87d6-97c802916c88" data-type="drawingObject">GUI updater 330</span>, and/or 
+  <span data-role="tag" data-value="23d8dbee-6b50-e176-8418-f068234113d6" id="idc55294e2-6157-096e-6bfa-292d49464245" data-type="drawingObject">event data 328</span> received from 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="idc60aebef-42f3-3e92-ba11-604625c1d27e" data-type="drawingObject">event sorter 338</span>. 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="id68b92833-a2d5-c26b-9869-cca704496d62" data-type="drawingObject">Event handler 334</span> may utilize or call 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="idd99ae3b7-5d53-6671-0d1d-946def03f842" data-type="drawingObject">data updater 306</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="id1468de6e-b5ee-0049-a9b9-3388597d22b9" data-type="drawingObject">object updater 314</span>, or 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="id6260e69f-6765-00a1-7235-44fbc541e852" data-type="drawingObject">GUI updater 330</span> to update the 
+  <span data-role="tag" data-value="af777745-a2fa-8558-c484-c1a4c8315603" id="id8d87abca-ded7-d094-d850-5706e92db592" data-type="drawingObject">application internal state 332</span>. Alternatively, one or more of the 
+  <span data-role="tag" data-value="67b0572e-8169-507a-b656-0ebdfad7b6cf" id="id8b61c10e-e756-5564-47a3-b4704f5e192c" data-type="term">application views</span> 302 include one or more 
+  <span data-role="tag" data-value="ca75802d-c170-081b-b05a-30562bfb3a0f" id="idf105b80e-83be-d0f1-f68a-df59155f4c8f" data-type="term">respective event</span> handlers 334. Also, in some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="ide4e3f28f-150d-27ad-c60f-385d5ce200cc" data-type="term">embodiments</span>, one or more of 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="id07c51ad5-2241-7a04-fce5-81fccc9efe44" data-type="drawingObject">data updater 306</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="id9d8c4164-42c8-0fdf-b26b-ea04ff337b8f" data-type="drawingObject">object updater 314</span>, and 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="idd6ecea59-ea86-ad41-3fda-4dc1f0d2c799" data-type="drawingObject">GUI updater 330</span> are included in a 
+  <span data-role="tag" data-value="143811c9-bc80-e79f-0326-0c8cda38d82e" id="id8ffb3fa4-ca89-8676-a087-eaf9b8b62a68" data-type="term">respective application view</span> 302.&nbsp;
+</p>
+<p></p>
+<p>A 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="id81089ce5-81bc-7db4-a3ea-897645d3fbca" data-type="term">respective event recognizer</span> 336 receives 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id6f9d317b-0e39-82b8-e271-635b27329b30" data-type="term">event information</span> (e.g., 
+  <span data-role="tag" data-value="23d8dbee-6b50-e176-8418-f068234113d6" id="id02d6d27f-3f3c-6dcb-99eb-24d7ccfe4575" data-type="drawingObject">event data 328</span>) from 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id45d00ceb-b9d2-8e34-2843-799ffd55e632" data-type="drawingObject">event sorter 338</span> and identifies an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idbab23124-faac-accb-e8fe-d56a71f72a02" data-type="term">event</span> from the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idacb960e6-9aff-062a-26cc-bff8ff3ef513" data-type="term">event information</span>. 
+  <span data-role="tag" data-value="64ca85a8-5764-e368-4866-380952f4bf66" id="id0f87ed5c-b06a-218e-8f5f-85cd882c74de" data-type="drawingObject">Event recognizer 336</span> includes 
+  <span data-role="tag" data-value="a31b7c0a-7a38-416c-f5da-70ea7a86e8fd" id="idb51d0a99-21bd-5d1a-7bc6-ce73fe28d89e" data-type="drawingObject">event receiver 304</span> and 
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="id42a43c2b-a649-3560-3491-058e34f57fb8" data-type="drawingObject">event comparator 312</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id6964f678-da9d-ba61-cd52-6b0b3949256c" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="64ca85a8-5764-e368-4866-380952f4bf66" id="idf0257fb2-abe8-fa66-3592-ddc2c730eb88" data-type="drawingObject">event recognizer 336</span> also includes 
+  <span data-role="tag" data-value="4bd9d6c4-977a-03dd-f683-5df7d158f538" id="idc855f30c-5d30-a17a-86fa-e87973b47b44" data-type="term">at least a subset</span> of: 
+  <span data-role="tag" data-value="fe39539e-0888-9a0f-71e6-c167dda9f661" id="id6cfced6f-de5e-9c1e-64ec-0a63b02b0a18" data-type="drawingObject">metadata 318</span>, and 
+  <span data-role="tag" data-value="4c681bbe-b988-3a4c-cfbc-411d4dffcd78" id="id01b66a2b-fc07-a0e9-efd8-fcce661f45cf" data-type="term">event delivery instructions</span> 226 (which may include 
+  <span data-role="tag" data-value="280aaeda-2b7e-9695-bfd7-2077d6afee2d" id="idd703e955-5698-35b8-3e5f-604650484295" data-type="term">sub-event delivery instructions</span>).&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="a31b7c0a-7a38-416c-f5da-70ea7a86e8fd" id="id809bf543-a580-54ab-e843-32124ba7ba03" data-type="drawingObject">event receiver 304</span> receives 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id4b3f6e70-5747-c855-1215-6fd826904ccd" data-type="term">event information</span> from 
+  <span data-role="tag" data-value="9061a4fb-4ac6-ea99-a5ad-3b5d24debe87" id="id33d108ed-b047-e056-2952-6cff558681a5" data-type="drawingObject">event sorter 338</span>. The 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id756068b5-ea7e-04e1-9483-49ed944bfdd9" data-type="term">event information</span> includes 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="idc6ee8604-ea26-37b1-95d5-588a6a0fbfac" data-type="term">information</span> about a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="idef482656-de12-e16f-ac9c-c643af40490a" data-type="term">sub-event</span>, for 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id555bedb8-5a48-0354-9aa5-ce76c92fe51f" data-type="term">example</span>, a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id0bfc12d2-a7ce-fdde-6ed1-3ab2c3ec81b1" data-type="term">touch</span> or a 
+  <span data-role="tag" data-value="14f5c68b-a1c2-6a29-5136-fa8b25ed3c40" id="id46f11eac-8fde-c553-d3ba-7c71db9c72ad" data-type="term">touch movement</span>. Depending on the 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="idf85866c0-4d1b-8d57-723e-42074044c4eb" data-type="term">sub-event</span>, the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id1f039b8b-231a-eaf3-1af2-00aa4af11b6d" data-type="term">event information</span> also includes 
+  <span data-role="tag" data-value="66f2ba46-44f6-c8b4-a3f8-9628d8250beb" id="id4e8aa791-4cd9-5865-3984-6ea6be5e6433" data-type="term">additional information</span>, such as 
+  <span data-role="tag" data-value="fae43284-b9fd-4be8-3f59-3deceaca9635" id="id170ee144-bdec-18ef-c87e-7e7aec217f05" data-type="term">location</span> of the 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="idcc611d04-75f9-3a3b-7756-2558773045b9" data-type="term">sub-event</span>. When the 
+  <span data-role="tag" data-value="0bed661d-9b67-3ecc-ec80-de45db7fd2af" id="id8bd0df53-7369-c279-8d95-c0a44244807b" data-type="term">sub-event concerns motion</span> of a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id50756818-dad3-40cd-30db-c9fe155805c1" data-type="term">touch</span>, the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id314f2468-5d89-17dd-0b80-12657da05d01" data-type="term">event information</span> may also include 
+  <span data-role="tag" data-value="82d1ac82-2b0e-5bd4-20ce-557d3f479b75" id="id7be27e41-8a43-eada-ac07-5cf5c83428eb" data-type="term">speed and direction</span> of the 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="id75bca233-c89f-69f7-13db-078eeecd2da5" data-type="term">sub-event</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="ide7072dcc-966b-87e5-110c-5dcb7eb98ab0" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="idc627b2a6-3b5c-74fd-63e2-10657a2d5f74" data-type="term">events</span> include 
+  <span data-role="tag" data-value="17604e46-312e-a3fb-24bf-0d5d6bf57327" id="idf161d1f7-681a-6fbd-1779-4a43bd26d508" data-type="term">rotation</span> of the 
+  <span data-role="tag" data-value="6fdfa111-e560-5f0f-34d4-61ded941be53" id="id577e976f-90fd-8627-6cfc-1facd9c0de2b" data-type="term">device</span> from one orientation to another (e.g., from a 
+  <span data-role="tag" data-value="50d9d899-be9a-54c3-c4d4-6cc95e82bd61" id="id553488b0-97e0-c3bb-1a43-c25ddf116c91" data-type="term">portrait orientation</span> to a 
+  <span data-role="tag" data-value="6b8ab8d6-3fbc-7d2b-8d0d-18bd771fdb25" id="idd66ce961-9989-9f16-c3ce-9a1bde01bc23" data-type="term">landscape orientation</span>, or 
+  <span data-role="tag" data-value="88af9e84-dada-9226-601a-c05b9ca15c06" id="id7ecea69d-0aba-4c02-a3e9-25de9cc27ea2" data-type="term">vice versa</span>), and the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id9c1acd04-21ae-b4f8-06da-7650f8735392" data-type="term">event information</span> includes corresponding 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id4106db1b-8eb7-eb34-14c6-25afab0bab36" data-type="term">information</span> about the 
+  <span data-role="tag" data-value="9a3cd3de-b1d5-04d0-baa1-d3e4dc0f1f21" id="idcc8ca2a2-7610-41c4-fe33-7cd2b4dfd902" data-type="term">current orientation</span> (also called 
+  <span data-role="tag" data-value="dc79be86-018b-d5d3-aa1e-ba3179386cc8" id="idd209868f-b3e1-a8d4-394f-24e807661799" data-type="term">device attitude</span>) of the 
+  <span data-role="tag" data-value="6fdfa111-e560-5f0f-34d4-61ded941be53" id="id21ab441d-a0cf-36e3-f1bc-0f1866a77f47" data-type="term">device</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="idd0ca3533-5a93-cce7-7c05-9e71c0218108" data-type="drawingObject">Event comparator 312</span> compares the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="idb986bc80-6c1e-6dbf-cf5e-ca633979833d" data-type="term">event information</span> to 
+  <span data-role="tag" data-value="17caf0e6-6faa-a4e2-ef80-5fc7db624124" id="id1e2d4802-cb2e-fba1-6e08-0c34203f42c0" data-type="term">predefined event</span>
+  <span data-role="tag" data-value="58b577bd-d793-61fe-3235-0c9167b8b852" id="idd159f918-ba27-43f4-d544-416ec9f123f2" data-type="term">event or sub-event</span>
+  <span data-role="tag" data-value="e85543eb-fdea-b435-365f-54e69d1b5189" id="ide12ac4dc-9b32-d300-1ca6-0d8a420c6683" data-type="term">sub-event definitions</span> and, based on the 
+  <span data-role="tag" data-value="ea2aad70-a97d-92b0-c369-92728e0dd468" id="ide36014f6-cabe-372a-2dda-ac8b02c6a5c4" data-type="term">comparison</span>, 
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="id04766d73-0d3f-b3db-560d-9c4f8922dc36" data-type="term">determines</span> an 
+  <span data-role="tag" data-value="6d691127-fa39-ed61-21f1-e780b66d35bb" id="id78c78fe5-3d92-bc65-131c-0437908c5923" data-type="term">event or sub event</span>, or 
+  <span data-role="tag" data-value="f03942c1-7154-0e1c-0d8d-f28a57942261" id="id1c5a284a-ce7b-2749-7ba2-00c3055ac3e4" data-type="term">determines or updates</span> the 
+  <span data-role="tag" data-value="93293f28-dfd3-9c45-7f66-0642678980ed" id="id9fc60711-e698-6f38-1c67-1be9ae5953a2" data-type="term">state</span> of an 
+  <span data-role="tag" data-value="58b577bd-d793-61fe-3235-0c9167b8b852" id="id93df3f6b-6a63-62d5-3497-59275eff4cb9" data-type="term">event or sub-event</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idea2b102c-4924-f85d-0649-eac223385d81" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="id0fd53cfc-eabb-92cb-2797-5dfe6966d6b2" data-type="drawingObject">event comparator 312</span> includes 
+  <span data-role="tag" data-value="651ce3a1-88b6-044a-ebcd-1a59058200f9" id="idab443f66-0a65-1fdf-efb3-99b9d9e2338f" data-type="term">event definitions</span> 286. 
+  <span data-role="tag" data-value="651ce3a1-88b6-044a-ebcd-1a59058200f9" id="iddabbcc19-7990-83c3-aa01-14acc047424b" data-type="term">Event definitions</span> 286 contain 
+  <span data-role="tag" data-value="77e01c95-e07a-d4d7-b412-cb422a8578f0" id="id0bd9540a-76e8-ba53-b2f4-f70ce87b9fc8" data-type="term">definitions</span> of 
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="idf1a02fac-30df-9f27-6a81-b3d818db0375" data-type="term">events</span> (e.g., predefined 
+  <span data-role="tag" data-value="ff4f9e92-9ac6-4509-7e1b-25923d522a8e" id="idefb47dd4-d459-adf7-7681-a91baa3e41aa" data-type="term">sequences</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id1541da3d-8bac-04c0-cdfa-ad19e184f1e2" data-type="term">sub-events</span>), for 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="iddfaf8987-149a-b54b-7b3a-9751e2f2731e" data-type="term">example</span>, 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id497ccebc-1722-6c3a-c6a7-fb5041fe6693" data-type="term">event</span> 1 (324), 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idc6fa722e-1a9e-8568-30a2-3a3b37d0289f" data-type="term">event</span> 2 (320), and 
+  <span data-role="tag" data-value="c3048099-6063-1c3b-c81a-9e47ff4ff29e" id="id9c875d66-e303-3f26-40d1-6a90719be2a0" data-type="term">others</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idb94ca892-777d-0359-d3f1-c560f4bb3f01" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="idf2ec905a-bc61-dfec-57db-caafb613036d" data-type="term">sub-events</span> in an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id4979e76e-8526-4dfc-9ba1-3399033fa3e7" data-type="term">event</span> (287) include, for 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="ide904062c-5081-b402-e467-68e5cb0b2e75" data-type="term">example</span>, 
+  <span data-role="tag" data-value="49276451-8d60-5ba6-c054-9e3edfed2b7f" id="id3ae817fe-8d23-50d6-91ee-a8c7f6a3a979" data-type="term">touch begin</span>, 
+  <span data-role="tag" data-value="ab56f433-4386-5402-c35a-d550da189a3a" id="id7849e62d-f457-526f-799e-94844f0a20dd" data-type="term">touch end</span>, 
+  <span data-role="tag" data-value="14f5c68b-a1c2-6a29-5136-fa8b25ed3c40" id="id33bdebfe-0dd4-b117-464e-a896b2082abc" data-type="term">touch movement</span>, 
+  <span data-role="tag" data-value="3f77caa9-5ddc-9c6b-7e48-007cff7471e9" id="ide3a41eef-c406-b46b-9d7a-d849e35daa63" data-type="term">touch cancellation</span>, and 
+  <span data-role="tag" data-value="9bbd44f3-3691-b604-8b72-e2d9095b0dfa" id="id9db2994a-8647-9424-45dd-8e11e22bcea6" data-type="term">multiple touching</span>. In one 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id2373ce93-9171-5119-c325-f2ded2c53ab7" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="8b46cb46-9013-f7ce-7fef-340d187464b6" id="id39350b30-7ded-ce39-128b-de2ef5e5f1c1" data-type="term">definition</span> for 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id32cc3ebe-2df6-ec38-05b7-fb5625b52f22" data-type="term">event</span> 1 (324) is a 
+  <span data-role="tag" data-value="07b9d1e2-98d8-c97d-c4b6-3364c87f0eac" id="idfc47c07f-bc51-6f5c-2e09-ccede0140df9" data-type="term">double tap</span> on a 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="ideb078075-7ecd-3e86-ff45-744e289d2fad" data-type="term">displayed object</span>. The 
+  <span data-role="tag" data-value="07b9d1e2-98d8-c97d-c4b6-3364c87f0eac" id="idf20e735b-c74c-ac32-dc53-32f93f964f75" data-type="term">double tap</span>, for 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id7daf86a8-f21c-066b-7926-86ad6fb4bfbc" data-type="term">example</span>, comprises a 
+  <span data-role="tag" data-value="cadff144-a63f-bd2e-3440-259bb2646e21" id="id3498a85c-0686-032e-b682-ce19776bed42" data-type="term">first touch</span> (
+  <span data-role="tag" data-value="49276451-8d60-5ba6-c054-9e3edfed2b7f" id="ideb2de61a-7df9-6a73-950f-d145945b143a" data-type="term">touch begin</span>) on the 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="id5d85440a-ae9e-f5ca-c709-61310f74bd7d" data-type="term">displayed object</span> for a 
+  <span data-role="tag" data-value="6b4275bc-967a-7251-865a-bf7e9b30c97a" id="id34def57a-9338-f957-3ac5-970a96c6649a" data-type="term">predetermined phase</span>, a 
+  <span data-role="tag" data-value="c2331671-4c3f-5fa9-04ae-5e0335059d17" id="idaa05ac37-5590-dbee-d18c-77e5c73fd6c1" data-type="term">first liftoff</span> (
+  <span data-role="tag" data-value="ab56f433-4386-5402-c35a-d550da189a3a" id="id8a16d6f8-394c-df46-ad13-aef83851c7a2" data-type="term">touch end</span>) for a 
+  <span data-role="tag" data-value="6b4275bc-967a-7251-865a-bf7e9b30c97a" id="idb8ffe4e1-2964-bd57-d2aa-b8d7451b9f57" data-type="term">predetermined phase</span>, a 
+  <span data-role="tag" data-value="e8c62968-d583-84db-07ba-132dd64a0ba0" id="id0207bb7a-796d-6f33-e659-b845cc3d9c4a" data-type="term">second touch</span> (
+  <span data-role="tag" data-value="49276451-8d60-5ba6-c054-9e3edfed2b7f" id="id59d1f6f4-470e-54e8-7abe-fb6604202733" data-type="term">touch begin</span>) on the 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="id35bce39d-5233-01c8-12a7-756100132bc0" data-type="term">displayed object</span> for a 
+  <span data-role="tag" data-value="6b4275bc-967a-7251-865a-bf7e9b30c97a" id="id8fa73533-65de-1b94-409b-5c7cbb90ccf7" data-type="term">predetermined phase</span>, and a 
+  <span data-role="tag" data-value="8f2d8ba2-36a9-af76-abd6-b0ed32512016" id="id987e9779-b4e1-bc17-34e6-4b6b9685a537" data-type="term">second liftoff</span> (
+  <span data-role="tag" data-value="ab56f433-4386-5402-c35a-d550da189a3a" id="id8d45823b-759c-d9b0-a87c-c9803451084f" data-type="term">touch end</span>) for a 
+  <span data-role="tag" data-value="6b4275bc-967a-7251-865a-bf7e9b30c97a" id="idf7b846ba-bcf9-a52b-3c4d-ff718a4503d8" data-type="term">predetermined phase</span>. In another 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="idcb6ff31c-a23c-ea3c-b40c-c2a0c0cbd46c" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="8b46cb46-9013-f7ce-7fef-340d187464b6" id="id320c10f2-3b0e-5a38-9f53-2f40e97355cb" data-type="term">definition</span> for 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idf259213c-501f-01bb-b0a7-7f24824d5c03" data-type="term">event</span> 2 (320) is a 
+  <span data-role="tag" data-value="cd6a5b18-772c-4201-d645-49cf37659414" id="id1ecf4791-b347-a74c-c9a9-358b444ca13b" data-type="term">dragging</span> on a 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="id39b1cbe0-9ce7-1ab2-65ab-d0aeac274d89" data-type="term">displayed object</span>. The 
+  <span data-role="tag" data-value="cd6a5b18-772c-4201-d645-49cf37659414" id="id57e161e0-96dd-23e1-9110-fed9658950de" data-type="term">dragging</span>, for 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id45a3dcce-aa72-2d0e-bc2f-de806f270c04" data-type="term">example</span>, comprises a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="idfb7cece8-a69c-72a8-4e89-3335ddddbb9f" data-type="term">touch</span> (or 
+  <span data-role="tag" data-value="979526b5-f212-6fff-f626-7e97b56f5dfa" id="idd0de9211-2c89-eaf3-a41b-7e04b6954189" data-type="term">contact</span>) on the 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="ida99af878-b407-201e-3dbb-f3e358ead150" data-type="term">displayed object</span> for a 
+  <span data-role="tag" data-value="6b4275bc-967a-7251-865a-bf7e9b30c97a" id="id6c3cee9b-11e9-3318-4f10-afde0ae689b6" data-type="term">predetermined phase</span>, a 
+  <span data-role="tag" data-value="85334782-fbf1-cbce-3764-0fb133b793c6" id="id1f19d620-2165-d6d8-845a-422279a3ff03" data-type="term">movement</span> of the 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="idc8abe60c-5cee-543d-61dd-ace8cbe877f3" data-type="term">touch</span> across 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="idea27d771-7a84-4aa5-9cf4-557cf0e469f6" data-type="term">touch-sensitive display</span> 278, and 
+  <span data-role="tag" data-value="65ff4fd0-4583-6061-bc18-e920d9555d43" id="idecd9d2c3-96da-bded-0bf4-f3f7e4b86e63" data-type="term">liftoff</span> of the 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id49bbd322-b40e-2faf-1911-553c683c6ff6" data-type="term">touch</span> (
+  <span data-role="tag" data-value="ab56f433-4386-5402-c35a-d550da189a3a" id="ida63f8763-2a30-0d9d-7677-227f9e3ddc17" data-type="term">touch end</span>). In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idb2e8c3c4-089a-948c-43a1-ef5ea2a264af" data-type="term">embodiments</span>, the 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idb8f082b4-f4ff-36eb-f817-3481c71d3081" data-type="term">event</span> also includes 
+  <span data-role="tag" data-value="d946895f-0166-6dff-983f-c4f284321cfe" id="id55f9c957-fc4a-98d2-522c-0496fa9635f8" data-type="term">information</span> for one or more associated 
+  <span data-role="tag" data-value="100eeda8-740b-43d6-6692-f99d79a20612" id="id6981a43b-be6a-75ff-cd05-3d0933acb3dd" data-type="term">event handlers</span> 334.&nbsp;
+</p>
+<p></p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id4725938a-16a2-cdfb-397b-9b189d2ea616" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="480bbe8f-7ec1-23b1-73e3-23407b3c54e1" id="id3335cdb5-e82d-04fb-d9eb-f7d0b4d9aef1" data-type="term">event definition</span> 287 includes a 
+  <span data-role="tag" data-value="8b46cb46-9013-f7ce-7fef-340d187464b6" id="id5e127eb0-f4a3-862a-c08d-198d53ddf17f" data-type="term">definition</span> of an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id31514511-493a-063b-cf00-43b76ed442e1" data-type="term">event</span> for a 
+  <span data-role="tag" data-value="b8eba09f-253a-f09c-2e19-3aec948c16cf" id="id75cdfe78-922b-30f4-d151-79063c8fd42c" data-type="term">respective user-interface object</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id2ff29fbe-f3d0-469c-2706-ad74627599a9" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="id7c829c51-efbf-240c-74b4-19fd9fbaccf6" data-type="drawingObject">event comparator 312</span> performs a 
+  <span data-role="tag" data-value="4315fdfb-6e68-5f17-12e6-79520fb55a8a" id="iddf3cf8c4-e37e-8387-e9e2-792e9543f58b" data-type="term">hit test</span> to determine which 
+  <span data-role="tag" data-value="1c7cd402-e584-8675-fe12-4074efb0bf4a" id="id615c853d-b3de-b47a-da89-deba2740b5b2" data-type="term">user-interface object</span> is associated with a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="ida7e9abbe-4a5c-36ba-076a-f66e110c5d9b" data-type="term">sub-event</span>. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="idbbd07df5-b4d8-09eb-54a2-1d794350b414" data-type="term">example</span>, in an 
+  <span data-role="tag" data-value="3ed0366e-9cef-804a-f876-5c235063a006" id="id2fbb4aa0-efce-0916-3e26-5cb15fe1c996" data-type="term">application view</span> in which 
+  <span data-role="tag" data-value="4bdf9cd6-132d-5a24-5290-10828f5d2040" id="id3300eff0-7fa4-7b34-ed20-6b44968fdbe9" data-type="term">three user-interface objects</span> are displayed on 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id32ee9541-3996-91c3-9b63-ca54c67fa808" data-type="term">touch-sensitive display</span> 278, when a 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id54af6d05-54bd-5370-c292-2ff25a88a7ba" data-type="term">touch</span> is detected on 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="id51f88cba-3acd-09dc-f118-b651c197cfc0" data-type="term">touch-sensitive display</span> 278, 
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="id55a045bd-e057-1ad2-7f50-9e12e0928e14" data-type="drawingObject">event comparator 312</span> performs a 
+  <span data-role="tag" data-value="4315fdfb-6e68-5f17-12e6-79520fb55a8a" id="id16e693d2-ffb4-1513-5cb9-6ebfb41bb53e" data-type="term">hit test</span> to determine which of the 
+  <span data-role="tag" data-value="4bdf9cd6-132d-5a24-5290-10828f5d2040" id="id31959c23-6efd-802b-8af8-e6fee5181e7b" data-type="term">three user-interface objects</span> is associated with the 
+  <span data-role="tag" data-value="248d0d35-90ad-9e09-1986-6bb6968e8499" id="id8e4a8f36-0b0e-25b8-6cf5-2f5dc2e49ef3" data-type="term">touch</span> (
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="id70cd5049-2b5e-2267-ec31-a63647df08d3" data-type="term">sub-event</span>). If each 
+  <span data-role="tag" data-value="ed0d8160-c54d-14f9-e031-6994f07e5427" id="id16404e7a-6ad2-d131-a25c-fa87b300bc68" data-type="term">displayed object</span> is associated with a 
+  <span data-role="tag" data-value="9190cd35-ca45-5399-02a7-676f4ddce83b" id="idb13d3e7e-ff99-53f8-868a-b0e28a56e64b" data-type="term">respective event handler</span> 334, the 
+  <span data-role="tag" data-value="5085ea5c-05e9-86d6-6a62-74f1b6457b91" id="id52c0643f-a084-c0d6-7def-95445e1c8ef3" data-type="term">event comparator</span> uses the 
+  <span data-role="tag" data-value="d52d1ed5-c816-ea79-96af-1b66378ea9a6" id="iddf55674d-2403-31a7-492a-b3b874106faa" data-type="term">result</span> of the 
+  <span data-role="tag" data-value="4315fdfb-6e68-5f17-12e6-79520fb55a8a" id="id1018de3f-f235-754b-62cd-b242453d1b64" data-type="term">hit test</span> to determine which 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="idd70cae86-df58-3e34-269f-d74921d5cc4c" data-type="drawingObject">event handler 334</span> should be activated. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="idff25a48a-c7a3-2da0-cce1-c248ea368f59" data-type="term">example</span>, 
+  <span data-role="tag" data-value="5f76c9a1-3a98-b20f-917f-b0b604ab33a4" id="id8c7b09bd-eb1f-ab2f-1924-f67a5cad53eb" data-type="drawingObject">event comparator 312</span> selects an 
+  <span data-role="tag" data-value="36ec7693-3893-d792-880c-b29d6df5b2d2" id="id038b6bf6-a62b-8285-3d6a-60f0c933aef2" data-type="term">event handler</span> associated with the 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="id5a2a2287-7ceb-41fe-a92c-b0c577325af3" data-type="term">sub-event</span> and the 
+  <span data-role="tag" data-value="309eec98-1db4-1ba4-3c6d-73320f2d7570" id="id5238cee9-92f0-ff45-3670-8c37c74b6ac5" data-type="term">object</span> triggering the 
+  <span data-role="tag" data-value="4315fdfb-6e68-5f17-12e6-79520fb55a8a" id="ida067f9e4-865e-64ab-cda3-993eee0e5da5" data-type="term">hit test</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id9770893c-2fd3-203a-78aa-2f761957eb91" data-type="term">embodiments</span>, the 
+  <span data-role="tag" data-value="8b46cb46-9013-f7ce-7fef-340d187464b6" id="id7fc95217-91cd-83fa-ba9d-c305182b04e6" data-type="term">definition</span> for a 
+  <span data-role="tag" data-value="ca75802d-c170-081b-b05a-30562bfb3a0f" id="id958d2b24-2039-6802-3584-e01f95a8858b" data-type="term">respective event</span> (287) also includes 
+  <span data-role="tag" data-value="68ce491b-c319-3a44-6228-6383121565cc" id="id037a8435-8f3d-c1e6-1c77-50ffa1d34bfc" data-type="term">delayed actions</span> that delay delivery of the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id241adaa8-dd56-fab6-b9d4-368836d33426" data-type="term">event information</span> until after it has been determined whether the 
+  <span data-role="tag" data-value="90bf2484-c6a5-43ea-0ea5-bfed43c55368" id="id613833e6-d974-746f-5fe3-1708c830d4da" data-type="term">sequence</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id2d6d21e1-ecf1-d6c7-d933-19e6ac8c4e84" data-type="term">sub-events</span> does or does not correspond to the 
+  <span data-role="tag" data-value="338f5395-e52a-4530-30ce-85940f2b1442" id="id75d3f4c4-eafa-1727-6e9e-7ff171b3df63" data-type="term">event recognizer's</span>
+  <span data-role="tag" data-value="0d20d08b-d618-202c-ea36-6c859e3e859f" id="id36ba4639-39a0-be8c-aade-021083d5e4b3" data-type="term">event type</span>.&nbsp;
+</p>
+<p></p>
+<p>When a 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="idfc866582-7776-e776-80d4-b3db9b620e79" data-type="term">respective event recognizer</span> 336 
+  <span data-role="tag" data-value="d510ab29-f1a7-ac39-0cdd-c255048d14b6" id="idab94d272-3975-aa1a-676f-72ee262d9091" data-type="term">determines</span> that the 
+  <span data-role="tag" data-value="3dfcfa6f-8a74-70e1-5037-fc85b53f88f4" id="iddf9cb31d-7314-c72e-9a62-0e7df6c77635" data-type="term">series</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="idb9330a0c-922f-9bfd-e7dc-3d07b424afee" data-type="term">sub-events</span> do not match any of the 
+  <span data-role="tag" data-value="06f36040-990d-a05d-6b44-e6a3a5a8431f" id="id0e0ca527-aeef-48b2-02b1-1e8e99993ea2" data-type="term">events</span> in 
+  <span data-role="tag" data-value="651ce3a1-88b6-044a-ebcd-1a59058200f9" id="id27ffef84-b80a-5e16-cd01-ecdfcfc82139" data-type="term">event definitions</span> 286, the 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="id90b3bd49-284e-0911-3696-7b745a13cb06" data-type="term">respective event recognizer</span> 336 enters an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idc1da5e66-8d6a-b37a-555f-ac26ab7c2af0" data-type="term">event</span> impossible, 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idce2f8665-70f5-db10-17c5-1d619fcfc3c1" data-type="term">event</span> failed, or 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id2fcb90aa-419e-ccaf-1c4c-34d79d16e481" data-type="term">event</span> ended 
+  <span data-role="tag" data-value="93293f28-dfd3-9c45-7f66-0642678980ed" id="idc4c86b32-2710-c951-27c8-a29496859b84" data-type="term">state</span>, after which it disregards 
+  <span data-role="tag" data-value="695d1f12-13db-2793-91b7-1f0ac6d07db7" id="id626bbadf-5773-ca8e-f15e-aa2c2e590207" data-type="term">subsequent sub-events</span> of the 
+  <span data-role="tag" data-value="1ba66932-b249-564c-7991-3fb83a7c9403" id="id3bb81bfe-6d4c-426c-db38-90b33eef0953" data-type="term">touch-based gesture</span>. In this 
+  <span data-role="tag" data-value="6ca6c6fd-901f-9e23-53fd-fc19905a3de3" id="id6a0d658e-f7cb-9829-7131-0991515c122d" data-type="term">situation</span>, 
+  <span data-role="tag" data-value="37b41cb7-006c-a2eb-f00b-d91867e13d28" id="idc31968de-1e1b-263e-a54f-8e1b4dc874e3" data-type="term">other event recognizers</span>, if any, that remain active for the 
+  <span data-role="tag" data-value="6ac56497-7a90-4c2e-d257-d27a7ac0a91d" id="id8142ff84-8e06-7d72-b3db-07f0b5a27221" data-type="term">hit view</span> continue to track and 
+  <span data-role="tag" data-value="571c2abf-0c87-a25f-e1d5-4c21752c631d" id="id106dda74-b219-4a98-1262-ee37e43dae84" data-type="term">process</span>
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id03189dab-773a-e62f-feb3-1e26e1345628" data-type="term">sub-events</span> of an 
+  <span data-role="tag" data-value="5a5ad9a0-5650-3802-7d1c-d09cba91967c" id="ida8db71c1-ac17-f0d5-3307-3f0d208b2983" data-type="term">ongoing touch-based gesture</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idf53ddd3a-752d-331f-42e3-b12c95fc04a3" data-type="term">embodiments</span>, a 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="id6fb41106-aab1-2ebc-e70d-cec990e801c9" data-type="term">respective event recognizer</span> 336 includes 
+  <span data-role="tag" data-value="fe39539e-0888-9a0f-71e6-c167dda9f661" id="id3e60d6a0-7274-7078-22ea-8a078f09c368" data-type="drawingObject">metadata 318</span> with 
+  <span data-role="tag" data-value="dc2113a4-6e41-5d56-e295-46dd422d16fa" id="id1238dba8-b526-7037-14a1-ba5bb936dbfa" data-type="term">configurable properties</span>, 
+  <span data-role="tag" data-value="52167bea-3673-2f6d-b2a4-27f186802f02" id="ideb060f43-9380-623a-e966-4ddf7201cb3c" data-type="term">flags</span>, and/or 
+  <span data-role="tag" data-value="4ffff957-71bf-e431-e507-10ca2fb8f417" id="idb26c1437-4350-fd6b-8f64-3a56980bc69c" data-type="term">lists</span> that indicate how the 
+  <span data-role="tag" data-value="4b95a406-1a2e-5ebf-bf2e-4a9674b0357d" id="id60ce018c-398c-66dc-c16b-56cba9fda283" data-type="term">event delivery system</span> should perform 
+  <span data-role="tag" data-value="379194da-cab8-2a7b-91a2-d1d43644f527" id="idb35e70d4-6d6d-85a3-4659-74245675d1e9" data-type="term">sub-event delivery</span> to actively involved 
+  <span data-role="tag" data-value="e20bbcb6-079a-c40a-be67-9fe5b3d5b9c5" id="id5e32ed00-6686-a3fb-e312-163d0753fc20" data-type="term">event recognizers</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id148cdc72-86e4-20da-17d0-069b80eb27c1" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="fe39539e-0888-9a0f-71e6-c167dda9f661" id="id924a632d-c418-db00-c1db-0aad85f007b9" data-type="drawingObject">metadata 318</span> includes 
+  <span data-role="tag" data-value="dc2113a4-6e41-5d56-e295-46dd422d16fa" id="idcdb80a31-8d50-eb8c-2524-85c39344c698" data-type="term">configurable properties</span>, 
+  <span data-role="tag" data-value="52167bea-3673-2f6d-b2a4-27f186802f02" id="idfc4eb4a9-3b9d-535f-f6f9-79cdb2ff0569" data-type="term">flags</span>, and/or 
+  <span data-role="tag" data-value="4ffff957-71bf-e431-e507-10ca2fb8f417" id="idfa326a27-cadb-785d-5308-3e0eabfb3364" data-type="term">lists</span> that indicate how 
+  <span data-role="tag" data-value="e20bbcb6-079a-c40a-be67-9fe5b3d5b9c5" id="idb7d6dcd4-2479-1bbf-9ab0-f24fe29b35de" data-type="term">event recognizers</span> may interact, or are enabled to interact, with one another. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id5e9c3983-14ee-a78d-deab-4492f1317d18" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="fe39539e-0888-9a0f-71e6-c167dda9f661" id="id63a781f2-8675-9ada-d0b4-7131c0df12f5" data-type="drawingObject">metadata 318</span> includes 
+  <span data-role="tag" data-value="dc2113a4-6e41-5d56-e295-46dd422d16fa" id="id93796bab-5920-fdf9-86fe-0bc53add3c8a" data-type="term">configurable properties</span>, 
+  <span data-role="tag" data-value="52167bea-3673-2f6d-b2a4-27f186802f02" id="id676d390e-df28-d814-4349-946f2651a6de" data-type="term">flags</span>, and/or 
+  <span data-role="tag" data-value="4ffff957-71bf-e431-e507-10ca2fb8f417" id="iddafd67a4-52b6-3032-575f-bcdb62d62e1c" data-type="term">lists</span> that indicate whether 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id606852be-cb4d-8b5c-3504-f17b49a9f08f" data-type="term">sub-events</span> are delivered to 
+  <span data-role="tag" data-value="7cafdbe3-0fc9-6030-5467-edb7be70cb99" id="idbb437d0b-becf-6751-7142-c073dc57d950" data-type="term">varying levels</span> in the 
+  <span data-role="tag" data-value="bbde8fc9-f143-507a-5503-dc3faf4b85d2" id="id726e93f2-8f26-ebc7-c888-2f9b3afc5bf7" data-type="term">view</span> or 
+  <span data-role="tag" data-value="0b67cae9-e156-48a8-fd5f-c79f85fe4344" id="id40a0a6de-a8c6-ec30-0ae1-10d8551e44e5" data-type="term">programmatic hierarchy</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idc8d92174-ae6d-1227-e923-0a27a493bb01" data-type="term">embodiments</span>, a 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="id7b7d3f5e-7601-e9fd-c0b2-884af2adda3f" data-type="term">respective event recognizer</span> 336 activates 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="id754edc66-172b-d382-9b0e-87ff2c53aaa7" data-type="drawingObject">event handler 334</span> associated with an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="idada3a475-1b46-9590-dc9d-0efc1e0b83a1" data-type="term">event</span> when one or more particular 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="idcf427246-79df-a86f-eb2f-f7c877079710" data-type="term">sub-events</span> of an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id378a441a-047f-96b8-e7fd-737027dcfd8d" data-type="term">event</span> are recognized. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id5ea4214f-86cc-8293-22ee-3fc53eb5821e" data-type="term">embodiments</span>, a 
+  <span data-role="tag" data-value="fdc6b1be-0790-8e28-c7f6-31d3beb5f891" id="idd10a2a3d-31e0-633b-01b0-7aa1de05b526" data-type="term">respective event recognizer</span> 336 delivers 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id5d5a6e34-64fa-7dc0-66db-581250a83111" data-type="term">event information</span> associated with the 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id31694520-ca56-b1df-65ca-bb5d16025667" data-type="term">event</span> to 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="idc72aa882-2585-d79c-2f56-99b0b529e919" data-type="drawingObject">event handler 334</span>. Activating an 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="id9387413a-c9d4-fb16-b72d-bb6cbf71b7b7" data-type="drawingObject">event handler 334</span> is distinct from sending (and deferred sending) 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="id1aac0c40-da85-6341-fa46-b4649ca433b2" data-type="term">sub-events</span> to a 
+  <span data-role="tag" data-value="210f9a83-2c0f-9a60-9b22-265be7647a20" id="idd9397de8-e760-66d8-44b4-ab8eda2d84ec" data-type="term">respective hit view</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="idc0d4e162-4ce1-6a60-e04b-f5ebe104ad7d" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="64ca85a8-5764-e368-4866-380952f4bf66" id="id81dcb314-3f7d-3a2b-934e-48dac26160ce" data-type="drawingObject">event recognizer 336</span> throws a 
+  <span data-role="tag" data-value="24a1f691-363e-87e5-3f39-9032ff86b88b" id="id761c79d6-9a9f-1966-a896-1d9e782ca7ba" data-type="term">flag</span> associated with the 
+  <span data-role="tag" data-value="608cc95a-b20e-8e31-9840-343a753e4491" id="id0908b317-9a9f-885b-5cac-8b8784868537" data-type="term">recognized event</span>, and 
+  <span data-role="tag" data-value="1b1046a2-3e5a-842f-5ca5-34d67f55833c" id="id6ea0484a-2bbb-9298-a190-914d9f8f7a8e" data-type="drawingObject">event handler 334</span> associated with the 
+  <span data-role="tag" data-value="24a1f691-363e-87e5-3f39-9032ff86b88b" id="idd8d2e635-77ed-79fc-0d9e-aa385f32db46" data-type="term">flag</span> catches the 
+  <span data-role="tag" data-value="24a1f691-363e-87e5-3f39-9032ff86b88b" id="id951ccb91-10ec-8b5e-efef-1aa0ff9eea78" data-type="term">flag</span> and performs a 
+  <span data-role="tag" data-value="4ceccaff-2eb0-829a-3091-7e042e0b20db" id="id67be0be1-652a-555d-6406-f5e6a2c336aa" data-type="term">predefined process</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id958f779e-14e1-12a1-ba4c-7911fe312760" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="4c681bbe-b988-3a4c-cfbc-411d4dffcd78" id="idad9fa4c4-14a7-64f4-d0e3-32754d85f668" data-type="term">event delivery instructions</span> 226 include 
+  <span data-role="tag" data-value="280aaeda-2b7e-9695-bfd7-2077d6afee2d" id="idc98d9995-253b-f2f7-6bc2-6bbd0c170cd1" data-type="term">sub-event delivery instructions</span> that 
+  <span data-role="tag" data-value="81619353-5cd8-7af1-32b1-ad45723539dc" id="iddf09bf80-2653-0978-01e0-a17ea9bc8065" data-type="term">deliver event information</span> about a 
+  <span data-role="tag" data-value="ee78b558-e0ee-e3a1-eb6d-a9e5270cbb97" id="id3f83460a-ff00-c4d7-c138-48c6a9c04587" data-type="term">sub-event</span> without activating an 
+  <span data-role="tag" data-value="36ec7693-3893-d792-880c-b29d6df5b2d2" id="id0631d8c6-2d71-39d4-cede-6a28454184e7" data-type="term">event handler</span>. Instead, the 
+  <span data-role="tag" data-value="280aaeda-2b7e-9695-bfd7-2077d6afee2d" id="id176202eb-2c95-3e1b-48f6-cb54661d64a1" data-type="term">sub-event delivery instructions</span>
+  <span data-role="tag" data-value="81619353-5cd8-7af1-32b1-ad45723539dc" id="id81f3d40c-b44c-3cf6-6413-f0ea2a2f017d" data-type="term">deliver event information</span> to 
+  <span data-role="tag" data-value="100eeda8-740b-43d6-6692-f99d79a20612" id="id584534a5-6ba4-5c75-48ac-d1c4252af225" data-type="term">event handlers</span> associated with the 
+  <span data-role="tag" data-value="3dfcfa6f-8a74-70e1-5037-fc85b53f88f4" id="id74cf4bef-e0a9-7e46-1a13-a4bfa0129534" data-type="term">series</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="ide8303dac-bbc0-83ed-5bca-caa632d64551" data-type="term">sub-events</span> or to 
+  <span data-role="tag" data-value="6913c34d-f8c6-45c6-e278-5ab687e940d9" id="id6f86df96-701c-158a-10bd-a45e20579f96" data-type="term">actively involved views</span>. 
+  <span data-role="tag" data-value="100eeda8-740b-43d6-6692-f99d79a20612" id="id1c10d35d-611e-642c-7c1d-0b9a5d97178c" data-type="term">Event handlers</span> associated with the 
+  <span data-role="tag" data-value="3dfcfa6f-8a74-70e1-5037-fc85b53f88f4" id="id5a3ca52e-3755-e4f9-6411-bfeb2feccc72" data-type="term">series</span> of 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="iddac1025a-883d-55db-f5f6-2c4fb58c04b8" data-type="term">sub-events</span> or with 
+  <span data-role="tag" data-value="6913c34d-f8c6-45c6-e278-5ab687e940d9" id="id7161be4a-be4e-4c24-831f-ca845e3b8d98" data-type="term">actively involved views</span> receive the 
+  <span data-role="tag" data-value="403b868d-e8e5-b13d-99a2-be2c0c379efd" id="id4c6dd08e-77b6-a542-3b22-e5db6ec9d367" data-type="term">event information</span> and perform a 
+  <span data-role="tag" data-value="160f619e-7a91-4d1a-63e6-d2881a67e38b" id="idbf2c0868-0984-ea93-26fd-a705cdc67887" data-type="term">predetermined process</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="ided75cb66-c4bf-f549-1665-0c16aaa5bd92" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="id5e8570a8-ce0a-5b46-bd92-b3bbc43df06c" data-type="drawingObject">data updater 306</span> creates and updates 
+  <span data-role="tag" data-value="1496c03c-6d51-227f-d3bc-bf563f5c2ddb" id="idf3b67ac7-4071-ee89-b933-701523e3da51" data-type="term">data</span> used in application 226. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id4c1ac482-2ed2-5161-33f7-d9d6d49bdc27" data-type="term">example</span>, 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="ide8d619be-1b2b-93d9-e86e-6b4ed8fa6506" data-type="drawingObject">data updater 306</span> updates the 
+  <span data-role="tag" data-value="98d0e19e-7c26-0e0c-4fb7-b85933dd338f" id="idf60d7c82-bb67-e7d9-a342-df5fb313bcc0" data-type="term">telephone number</span> used in 
+  <span data-role="tag" data-value="5a756966-201b-1315-de78-1d146469956e" id="id33c1e7d6-d830-2036-a17b-b1d0b8321b90" data-type="drawingObject">contacts module 240</span>, or 
+  <span data-role="tag" data-value="e41989b3-f4dd-7f70-1831-676f8374fc7a" id="idf63d23e0-2ca2-9a3d-a9ee-7847807c146f" data-type="term">stores</span> a 
+  <span data-role="tag" data-value="ea71d3c7-579f-a114-55fc-5742976b73b7" id="id9a1f3fbb-e9da-142f-d523-79689bc84beb" data-type="term">video file</span> used in 
+  <span data-role="tag" data-value="c630270f-2bd2-c10f-2c78-4db200ee111b" id="idf3a9355c-53e3-3420-6ad3-19019e7d5525" data-type="term">video player module</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id0b91e47f-36b1-cea1-9a38-2986e6d82554" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="id6b9e175b-23b2-1bf5-e05d-4f010d003499" data-type="drawingObject">object updater 314</span> creates and updates 
+  <span data-role="tag" data-value="a44aa48a-5e29-923e-3cd3-3bde339cdad3" id="id2fedf3af-453c-c228-93b2-6ab87329a168" data-type="term">objects</span> used in application 226. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="idab014197-6b3a-2211-d529-80ed307427cb" data-type="term">example</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="id90609c67-2ab6-5482-d6fa-8513122cc4e7" data-type="drawingObject">object updater 314</span> creates a 
+  <span data-role="tag" data-value="9566b863-7d0d-3e76-55b2-faeb595017a2" id="id9c98ddc8-953f-65eb-1c49-e35d8aced9f4" data-type="term">new user-interface object or updates</span> the 
+  <span data-role="tag" data-value="3c379b32-367e-232c-f3e9-d932a698965e" id="id1233393f-34da-867d-3cc2-684fe75bcd9c" data-type="term">position</span> of a 
+  <span data-role="tag" data-value="1c7cd402-e584-8675-fe12-4074efb0bf4a" id="idac721fb5-b50c-b3f0-8441-2007d3677950" data-type="term">user-interface object</span>. 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="id7258ae99-7ff3-6db5-e17e-714f4fe99775" data-type="drawingObject">GUI updater 330</span> updates the GUI. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="id4decc82b-6780-5f29-5007-7820650c020a" data-type="term">example</span>, 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="id75856fb8-8284-0c59-5594-de93dbea70eb" data-type="drawingObject">GUI updater 330</span> prepares 
+  <span data-role="tag" data-value="092bb4de-ac0a-e840-b9b4-6009b6997ea8" id="id05e68f21-f5b2-e9a1-1735-0a4c2745c7ac" data-type="term">display information</span> and sends it to 
+  <span data-role="tag" data-value="c07046e8-0de6-b912-ff11-52974f76bab0" id="ida2b04b47-7eb7-2793-55d0-d99d9df15fbd" data-type="drawingObject">graphics module 266</span> for 
+  <span data-role="tag" data-value="3f626644-da3e-8f0a-c964-e17d329e20fb" id="id83bccc0a-3221-bf96-643d-57b4a8c887fc" data-type="term">display</span> on a 
+  <span data-role="tag" data-value="3d2821d4-9d69-9a4b-1e12-ef89dde51f8e" id="idfad6a7c9-65e5-9359-c726-95931cd50769" data-type="term">touch-sensitive display</span>.&nbsp;
+</p>
+<p></p>
+<p>In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id42d6922f-bffe-e2dc-e281-2589bc088d68" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="577fc0fa-469e-901d-69c2-ce0705d001b0" id="id3e8ccb4a-90f2-3314-fadb-3f951294ee7e" data-type="term">event handler(s)</span> 334 includes or has 
+  <span data-role="tag" data-value="37d032a3-dfcd-bff2-6bb8-be3683773c6c" id="id9f8c5a3e-60eb-0c4e-6c21-a83e84dc2386" data-type="term">access</span> to 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="id50bc97f3-fcb5-18de-4768-08026efe887a" data-type="drawingObject">data updater 306</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="id13b2d51f-dcb4-9ba5-ebbd-b0a54e7aa48c" data-type="drawingObject">object updater 314</span>, and 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="id53b79cd8-3710-824f-1128-3c2a590df7a8" data-type="drawingObject">GUI updater 330</span>. In some 
+  <span data-role="tag" data-value="e4477748-50d4-86af-0cdb-927be053dd30" id="id5282578c-f01e-25f5-f999-ad7fbdee804d" data-type="term">embodiments</span>, 
+  <span data-role="tag" data-value="8091e0f5-a9e9-fbeb-f51d-f1bdb5bf02db" id="id60f5978e-cceb-dbd3-5b4b-3c9348005e08" data-type="drawingObject">data updater 306</span>, 
+  <span data-role="tag" data-value="ca39eb24-dc5b-8cf4-8246-3cd410e6f28c" id="idb1e177fd-edb3-7530-4c3d-ca63dd74f511" data-type="drawingObject">object updater 314</span>, and 
+  <span data-role="tag" data-value="5b4036b1-34f8-a78d-876e-3e974e259f0c" id="id7dbf7d0c-7c4c-59bb-1506-304e4bb6000c" data-type="drawingObject">GUI updater 330</span> are included in a 
+  <span data-role="tag" data-value="3269a06a-1c80-bee9-d8ff-8c92b0f7eb3b" id="id078fa19d-314b-7f96-2f1e-4a04209ffd35" data-type="term">single module</span> of a 
+  <span data-role="tag" data-value="307bdad1-6b4a-855a-0fa0-1143da34d327" id="id8ff9016a-3db9-c994-64c8-83aa1140d2cd" data-type="term">respective application</span> 226 or 
+  <span data-role="tag" data-value="aa437d29-919d-3b7f-44ea-31a757f9e9fb" id="id4c53bc8e-a8f1-3156-e41f-636d22e2a4e4" data-type="drawingObject">application view 302</span>. In 
+  <span data-role="tag" data-value="bb3f7ce4-474e-ca54-17be-78836d33257d" id="id957633f5-45ce-6c2c-3e5a-3ac439b85217" data-type="term">other embodiments</span>, they are included in 
+  <span data-role="tag" data-value="0e016775-53dd-daf8-0a70-f309f60ea445" id="id7fa577a9-53fc-2acf-1929-ae580b9d7a0e" data-type="term">two or more software modules</span>.&nbsp;
+</p>
+<p></p>
+<p>It shall be understood that the 
+  <span data-role="tag" data-value="fe9b93d2-d185-bbb1-8952-f5a5c2fe329a" id="id01cf1943-9e83-c32d-e771-9a262317673b" data-type="term">foregoing discussion regarding event handling</span> of 
+  <span data-role="tag" data-value="33c60d8a-b200-8ef5-e3dd-5787900e2f98" id="id5e3c3478-71e1-f4df-f269-012a1b304679" data-type="term">user touches</span> on 
+  <span data-role="tag" data-value="6e4b0231-27c8-e1d9-de1e-d2c01104324f" id="id83979d7a-8bc2-79bc-bb67-35f6bd15afad" data-type="term">touch-sensitive displays</span> also applies to 
+  <span data-role="tag" data-value="527a4229-6b45-7c40-a25b-cf3f372cf0b4" id="idebe16f26-0d9d-41e2-7e7b-db81028b61c1" data-type="term">other forms</span> of 
+  <span data-role="tag" data-value="2a65f76f-a6d0-ac8d-061a-3eb5911e7e8b" id="id4dbe8989-43d3-386c-4b52-a8b797e78178" data-type="term">user inputs</span> to operate 
+  <span data-role="tag" data-value="7f95e548-f5ba-21c7-da4a-330329e776cd" id="ida16bd914-ca5e-16c8-a468-f0a7ab292dd9" data-type="term">multifunction devices</span> 200 with 
+  <span data-role="tag" data-value="c61c5a51-216c-821f-ddd9-e7e2f492f772" id="id27a16aa4-b728-c61c-3ebc-bfb921277af5" data-type="term">input devices</span>, not all of which are initiated on 
+  <span data-role="tag" data-value="2fe2a3b8-3b84-aeb1-a596-27ca7d8866b8" id="idec2fb859-4d66-6496-c8e4-19ce704465c2" data-type="term">touch screens</span>. For 
+  <span data-role="tag" data-value="64fd6561-ddd1-1018-cddf-b6ee14cdcc86" id="iddf2b74c5-3db8-d1f0-2ad6-b8dd0e7a249d" data-type="term">example</span>, 
+  <span data-role="tag" data-value="b43360a4-83af-4a8c-97fa-1976968cf1c3" id="id34a9560e-c76b-3ec5-e725-bc870ff7ac2b" data-type="term">mouse movement and mouse button presses</span>, optionally coordinated with 
+  <span data-role="tag" data-value="6a5b8e9f-7332-6fd2-4b18-120815ad9182" id="id400e7f68-72e1-5ab9-0698-fbf214d4e44b" data-type="term">single or multiple keyboard presses</span> or 
+  <span data-role="tag" data-value="967c668a-c979-2383-18c1-6689d2379ea0" id="id01d5e520-6719-cba3-0494-2ca212183539" data-type="term">holds</span>; 
+  <span data-role="tag" data-value="7d7cb0ef-3dfa-aa46-2ad8-bb324e133872" id="id93adcd56-5a57-96ec-f8b9-ec9dfb705e99" data-type="term">contact movements</span> such as 
+  <span data-role="tag" data-value="c2624211-26ba-ffee-7182-48a87cc3e8b9" id="idb666f725-f2ab-47c1-4f1a-08be7a24e5b9" data-type="term">taps</span>, drags, 
+  <span data-role="tag" data-value="34486c8f-d005-0c55-4ef2-846bca81d9ac" id="ida23f587a-f4c3-822d-206f-7d24a26073ec" data-type="term">scrolls</span>, etc. on 
+  <span data-role="tag" data-value="3cfe0471-ce43-57c3-fd2e-bbebce2fbf0b" id="ide2b28355-2b5f-1048-8313-69f5b39efe83" data-type="term">touchpads</span>; 
+  <span data-role="tag" data-value="06a67389-16db-cf81-055b-9827ebe8ccf9" id="id28571f86-e1e4-32c8-f3cf-b1306cb2c97b" data-type="term">pen stylus inputs</span>; 
+  <span data-role="tag" data-value="85334782-fbf1-cbce-3764-0fb133b793c6" id="idb89de3cf-ec96-ee15-15f0-06107a83f572" data-type="term">movement</span> of the 
+  <span data-role="tag" data-value="6fdfa111-e560-5f0f-34d4-61ded941be53" id="idac94b012-922f-db47-2657-a343db6fab0f" data-type="term">device</span>; 
+  <span data-role="tag" data-value="e3c927ec-d945-1542-1564-36fe2e430cfc" id="id6d0ac014-71d7-f850-0a5e-5e0521c643da" data-type="term">oral instructions</span>; detected 
+  <span data-role="tag" data-value="2dcf800f-8a58-4741-3bfe-de35ac5f1f8d" id="id57cccbd5-e7cc-0c02-0235-3903cff2066a" data-type="term">eye movements</span>; 
+  <span data-role="tag" data-value="c9577eec-15ff-2757-f9b9-ab9070f669ed" id="id8f73fa28-aadc-8fe8-c790-be1b54da29e9" data-type="term">biometric inputs</span>; and/or any 
+  <span data-role="tag" data-value="b979cad8-b14a-fa5e-e875-d05dc43c722d" id="id4e922125-d86a-6e7d-5471-a34102a51736" data-type="term">combination</span> thereof are optionally utilized as 
+  <span data-role="tag" data-value="ba25946c-5c3d-7ce2-8c2f-204e7993c6eb" id="id76590fff-561e-de6e-2c5c-41291d419d33" data-type="term">inputs</span> corresponding to 
+  <span data-role="tag" data-value="297f39e0-0008-ab8f-bc78-7cb593f3b8c7" id="iddde6d7d9-aa34-c27b-c092-fd7b85814551" data-type="term">sub-events</span> which define an 
+  <span data-role="tag" data-value="e27427c6-d597-4da2-52e8-a09cae4a7820" id="id8f6fab10-b703-219f-517b-4041c4f40853" data-type="term">event</span> to be recognized.&nbsp;
+</p>
+<p></p>
